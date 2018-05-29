@@ -4,10 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Strona główna</title>
+<title>Zaloguj się</title>
 </head>
 <body>
-	<h1>Strona główna</h1>
-	<a href="admin.jsp">Panel administracyjny</a>
+	<h1>Zaloguj się</h1>
+	<form action="j_security_check" method="post">
+		Login: <input type="text" name="j_username">
+		<br>
+		Password: <input type="password" name="j_password">
+		<input type="submit" value="Zaloguj">
+	</form>
 </body>
 </html>
